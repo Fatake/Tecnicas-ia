@@ -1,4 +1,5 @@
 from random import randrange
+import os
 
 def sensaTemperatura(temp, gas, vent):
 	return (temp + (2 * gas) - (5 * vent))
@@ -7,7 +8,7 @@ def aplicarGas(Gas):
     print("[+] Aplicando {0}% de Gas".format(Gas))
 
 def main():
-    memoria = open('datos.dat','w')
+    memoria = open('datos.dat','w+')
 
     temp = 0
     Gas = 4
