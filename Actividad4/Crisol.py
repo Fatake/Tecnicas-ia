@@ -22,6 +22,8 @@ def main():
         print("[i] Temperatura: {0} Gas: {1}".format(temp,Gas))
 
         str = "{0}    {1}\n".format(temp,Gas)
+
+        # Registra
         memoria.write(str)
 
         if( temp > 320):
@@ -30,13 +32,14 @@ def main():
                 print( "[-] Bajando nivel de gas") 
                 Gas -= 1
             print ("[+] Aumentando ventilacion")
-            
         else:
             if(Vent != 0):
                 Vent = 0
                 print ("[-] Apagando ventilacion")
             print( "[+] Aumentando nivel de gas") 
             Gas += 1
+            
+            # Actua
             aplicarGas(Gas)
         print("\n")
 
