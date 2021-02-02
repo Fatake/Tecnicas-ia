@@ -35,6 +35,13 @@ func main() {
 	vent := 0
 	fmt.Printf("<-- Iniciando Programa Controlador Crisol -->\n")
 	memoria, err := os.OpenFile(pathFile, os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		_, err := os.OpenFile(pathFile, os.O_CREATE, 0666)
+		if err != nil {
+			log.Fatal(err)
+			os.Exit(1)
+		}
+	}
 	check(err)
 
 	for i := 0; i < 200; i++ {
