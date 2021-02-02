@@ -74,3 +74,974 @@
 [+] Aplicando 15 de Gas 
 
 
+[i] Temp: 240 Gas: 15 
+[+] Aumentando nivel de gas
+[+] Aplicando 16 de Gas 
+
+
+[i] Temp: 272 Gas: 16 
+[+] Aumentando nivel de gas
+[+] Aplicando 17 de Gas 
+
+
+[i] Temp: 306 Gas: 17 
+[+] Aumentando nivel de gas
+[+] Aplicando 18 de Gas 
+
+
+[i] Temp: 342 Gas: 18 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 357 Gas: 15 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 351 Gas: 12 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 324 Gas: 9 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 276 Gas: 6 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 7 de Gas 
+
+
+[i] Temp: 290 Gas: 7 
+[+] Aumentando nivel de gas
+[+] Aplicando 8 de Gas 
+
+
+[i] Temp: 306 Gas: 8 
+[+] Aumentando nivel de gas
+[+] Aplicando 9 de Gas 
+
+
+[i] Temp: 324 Gas: 9 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 321 Gas: 6 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 297 Gas: 3 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 305 Gas: 4 
+[+] Aumentando nivel de gas
+[+] Aplicando 5 de Gas 
+
+
+[i] Temp: 315 Gas: 5 
+[+] Aumentando nivel de gas
+[+] Aplicando 6 de Gas 
+
+
+[i] Temp: 327 Gas: 6 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 318 Gas: 3 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 328 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 315 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 319 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 325 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 310 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 312 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 316 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 322 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 307 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 309 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 313 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 319 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 327 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 314 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 318 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 324 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 309 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 311 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 315 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 321 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 306 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 308 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 312 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 318 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 328 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 315 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 319 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 325 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 310 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 312 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 316 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 322 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 307 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 309 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 313 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 319 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 327 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 314 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 318 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 324 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 309 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 311 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 315 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 321 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 306 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 308 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 312 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 318 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 328 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 315 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 319 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 325 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 310 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 312 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 316 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 322 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 307 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 309 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 313 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 319 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 327 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 314 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 318 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 324 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 309 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 311 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 315 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 321 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 306 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 308 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 312 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 318 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 328 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 315 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 319 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 325 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 310 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 312 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 316 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 322 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 307 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 309 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 313 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 319 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 327 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 314 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 318 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 324 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 309 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 311 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 315 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 321 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 306 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 308 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 312 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 318 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 328 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 315 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 319 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 325 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 310 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 312 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 316 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 322 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 307 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 309 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 313 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 319 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 327 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 314 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 318 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 324 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 309 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 311 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 315 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 321 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 306 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 308 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 312 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 318 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[i] Temp: 326 Gas: 4 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 313 Gas: 1 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 317 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 323 Gas: 3 
+[+] Aumentando Ventilacion
+[-] Bajando nivel de gas
+
+
+[i] Temp: 308 Gas: 0 
+[-] Apagando ventilacion
+[+] Aumentando nivel de gas
+[+] Aplicando 1 de Gas 
+
+
+[i] Temp: 310 Gas: 1 
+[+] Aumentando nivel de gas
+[+] Aplicando 2 de Gas 
+
+
+[i] Temp: 314 Gas: 2 
+[+] Aumentando nivel de gas
+[+] Aplicando 3 de Gas 
+
+
+[i] Temp: 320 Gas: 3 
+[+] Aumentando nivel de gas
+[+] Aplicando 4 de Gas 
+
+
+[----]
