@@ -1,5 +1,3 @@
-from random import randrange
-import os
 
 def sensaTemperatura(temp, gas, vent):
 	return (temp + (2 * gas) - (5 * vent))
