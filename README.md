@@ -8,6 +8,7 @@ Repositorio de tecnicas de Inteligencia Artificial, con ejercicios en Python, go
 
 * Actividad4: Serie de ejemplo de Agentes simples, Racionales y Bien informados aplicados en un crisol, o fundidora de metales que sensan y controlan la temperatura
 
+---
 ### Ejecucion
 
 Para Programas en GO
