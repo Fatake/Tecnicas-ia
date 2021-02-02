@@ -38,6 +38,7 @@ func main() {
 	check(err)
 
 	for i := 0; i < 200; i++ {
+		// sensor
 		temp = sensarTemp(temp, gas, vent)
 		fmt.Printf("[i] Temp: %d Gas: %d \n", temp, gas)
 
@@ -48,11 +49,11 @@ func main() {
 		}
 
 		if temp > 320 {
-			vent++
+			vent = vent + 3
 			fmt.Println("[+] Aumentando Ventilacion")
 			if gas != 0 {
 				fmt.Println("[-] Bajando nivel de gas")
-				gas--
+				gas = gas - 3
 			}
 		} else {
 			if vent != 0 {
@@ -64,7 +65,7 @@ func main() {
 			aplicarGas(gas)
 		}
 		fmt.Print("\n\n")
-		time.Sleep(1 * time.Second)
+		time.Sleep(250 * time.Millisecond)
 	}
 	defer memoria.Close()
 	fmt.Print("[----]\n")
