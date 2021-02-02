@@ -2,11 +2,9 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"strconv"
-	"time"
 )
 
 var pathFile string = "datos.dat"
@@ -27,22 +25,25 @@ func check(err error) {
 }
 
 func main() {
-	bw := []byte("Temp    Gas\n")
-	err := ioutil.WriteFile(pathFile, bw, 0777)
-	check(err)
-	temp := 0
-	gas := 0
-	vent := 0
-	fmt.Printf("<-- Iniciando Programa Controlador Crisol -->\n")
 	memoria, err := os.OpenFile(pathFile, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
+		fmt.Println("[!] no existe Datos.dat, creando...")
 		_, err := os.OpenFile(pathFile, os.O_CREATE, 0666)
 		if err != nil {
 			log.Fatal(err)
 			os.Exit(1)
 		}
 	}
-	check(err)
+
+	if _, err := memoria.WriteString("Temp    Gas\n"); err != nil {
+		log.Fatal(err)
+	}
+
+	temp := 0
+	gas := 0
+	vent := 0
+
+	fmt.Printf("<-- Iniciando Programa Controlador Crisol -->\n")
 
 	for i := 0; i < 200; i++ {
 		// sensor
@@ -72,7 +73,7 @@ func main() {
 			aplicarGas(gas)
 		}
 		fmt.Print("\n\n")
-		time.Sleep(250 * time.Millisecond)
+		// time.Sleep(250 * time.Millisecond)
 	}
 	defer memoria.Close()
 	fmt.Print("[----]\n")
