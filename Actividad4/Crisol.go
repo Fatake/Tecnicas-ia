@@ -7,7 +7,10 @@ import (
 	"strconv"
 )
 
-var pathFile string = "datos.dat"
+//
+const (
+	PATHFILE string = "datos.dat"
+)
 
 func sensarTemp(temp int, gas int, vent int) int {
 	return (temp + (2 * gas) - (5 * vent))
@@ -25,10 +28,10 @@ func check(err error) {
 }
 
 func main() {
-	memoria, err := os.OpenFile(pathFile, os.O_APPEND|os.O_WRONLY, 0644)
+	memoria, err := os.OpenFile(PATHFILE, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		fmt.Println("[!] no existe Datos.dat, creando...")
-		_, err := os.OpenFile(pathFile, os.O_CREATE, 0666)
+		_, err := os.OpenFile(PATHFILE, os.O_CREATE, 0666)
 		if err != nil {
 			log.Fatal(err)
 			os.Exit(1)
