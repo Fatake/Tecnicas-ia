@@ -15,7 +15,7 @@ def main():
     # Cuando vent = 1 entonces Gas se baja al 0%
 
     memoria.write("Temp    Gas\n")
-    print("<-- Iniciando Programa controlador Cristol -->")
+    print("<-- Agente Simple Cristol -->")
     
     for i in range(300):
         # Sensar
