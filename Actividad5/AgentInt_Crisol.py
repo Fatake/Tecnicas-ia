@@ -8,11 +8,28 @@ def aplicarGas(Gas):
 def busca(historico, temp):
     posibles = []
     for dato  in historico:
-        if (temp >= dato[0]):
+        if (temp == dato[0]):
             posibles.append(dato)
-    print("[i] Temperaturas encontradas en Historico")
-    print(posibles)
+  
+    if ( len(posibles) == 0 ):
+        print("[i] Temperatura No encontrada en Historico")
+        return 4
 
+    print("[i] Temperaturas encontradas en Historico {0}".format(len(posibles)))
+    # print(posibles)
+
+    p = 0 # apuntador al indice mejor
+    aux = 0 # Auxiliar para saber cual es el mayor
+    tempF = 0
+    for i in range (0,11,1):
+        tempF = posibles[i][2]
+
+        if(tempF <= 320  ):
+            aux = tempF
+            p = i
+            
+    # print("[i] Mejor Temperatura Temp Futura {0} a {1}% de gas".format(aux,posibles[p][1]))
+    return posibles[p][1]
 
 def main(historico):
     temp = 0 # maximo hasta 320
@@ -27,10 +44,10 @@ def main(historico):
         # Sensar
         temp = sensaTemperatura(temp, Gas, Vent)
         
-        print("[i] Temperatura: {0} Gas: {1}".format(temp,Gas))
+        print("[i] Temp Actual: {0}, % de Gas: {1}".format(temp,Gas))
 
-        busca(historico,temp)
-        break
+        nivelGas = busca(historico,temp)
+        
         # Pregunta sobre la temperatura
         if( temp > 320):
             Vent = 1
@@ -43,12 +60,18 @@ def main(historico):
             if(Vent != 0):
                 Vent = 0
                 print ("[-] Ventilacion Apagada")
-                
-            print( "[+] Aumentando nivel de gas") 
-            Gas += 10
             
+            if(Gas > nivelGas):
+                print( "[+] Disminuyendo Nivel de gas") 
+            else:
+                print( "[+] Aumentando nivel de gas") 
+
+            Gas = nivelGas
             # Actua
             aplicarGas(Gas)
+            
+            if(Gas == 0):
+                Vent = 1
         print("\n")
 
 
@@ -70,7 +93,7 @@ def creaTabla():
                 aux += ""+str(temp)
             aux += ","+str(sensaTemperatura(temp, gas, 0))
             file.write(aux)
-            historial.append([temp,gas])
+            historial.append([temp,gas,sensaTemperatura(temp, gas, 0)])
         file.write("\n")
 
     file.close()
