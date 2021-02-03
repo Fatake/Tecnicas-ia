@@ -1,3 +1,4 @@
+from random import randrange
 
 def sensaTemperatura(temp, gas, vent):
 	return (temp + (2 * gas) - (5 * vent))
@@ -13,7 +14,7 @@ def busca(historico, temp):
   
     if ( len(posibles) == 0 ):
         print("[i] Temperatura No encontrada en Historico")
-        return 4
+        return randrange(4)+1
 
     print("[i] Temperaturas encontradas en Historico {0}".format(len(posibles)))
     # print(posibles)
@@ -32,12 +33,13 @@ def busca(historico, temp):
     return posibles[p][1]
 
 def main(historico):
+    memoria = open('datos.dat','w+')
     temp = 0 # maximo hasta 320
     Gas = 0 # 4 representa un 4 %
     Vent = 0 # 1 prendido 0 Apagado
 
     # Cuando vent = 1 entonces Gas se baja al 0%
-
+    memoria.write("Temp,Gas\n")
     print("<-- Agente Inteligente Cristol -->")
     
     for i in range(300):
@@ -47,6 +49,8 @@ def main(historico):
         print("[i] Temp Actual: {0}, % de Gas: {1}".format(temp,Gas))
 
         nivelGas = busca(historico,temp)
+        str = "{0},{1}\n".format(temp,Gas)
+        memoria.write(str)
         
         # Pregunta sobre la temperatura
         if( temp > 320):
@@ -73,7 +77,7 @@ def main(historico):
             if(Gas == 0):
                 Vent = 1
         print("\n")
-
+    memoria.close()
 
 def creaTabla():
     file = open('Tabla.csv','w+')

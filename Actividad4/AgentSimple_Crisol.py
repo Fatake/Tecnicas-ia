@@ -14,7 +14,7 @@ def main():
 
     # Cuando vent = 1 entonces Gas se baja al 0%
 
-    memoria.write("Temp    Gas\n")
+    memoria.write("Temp,Gas\n")
     print("<-- Agente Simple Cristol -->")
     
     for i in range(300):

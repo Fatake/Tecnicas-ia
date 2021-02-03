@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-PATH = "datos1.dat"
+PATH = "datos.dat"
 
 def openFile():
     
@@ -41,7 +41,7 @@ def main():
     ax.plot(time, temp)
 
     ax.set(xlabel='Tiempo (s)°', ylabel='Temperatura',
-        title='Crisol Agente Bien Informado Temperatura')
+        title='Crisol Agente Inteligente Temperatura')
     ax.grid()
 
     fig.savefig("temp.png")
@@ -50,7 +50,7 @@ def main():
 
     ax2.plot(time, gas)
     ax2.set(xlabel='Tiempo (s)°', ylabel='% De Gas',
-        title='Crisol Agente Bien Informado Temperatura')
+        title='Crisol Agente Inteligente % de Gas')
     ax2.grid()
 
     fig2.savefig("gas.png")
