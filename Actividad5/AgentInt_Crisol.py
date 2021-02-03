@@ -49,5 +49,32 @@ def main():
 
     memoria.close()
 
+def creaTabla():
+    file = open('Tabla.csv','w+')
+
+    file.write("t/g,0,10,20,30,40,50,60,70,80,90,100\n")
+
+    print("<-- Haciendo Prueba Inicial -->")
+    historial = []
+    # Para cada Temperatura
+    for temp in range(0,330,10):
+        f = True
+        # Cada Porcentaje de Gas
+        for gas in range(0,110,10):
+            aux = ""
+            if (f):
+                f = False
+                aux += ""+str(temp)
+            aux += ","+str(sensaTemperatura(temp, gas, 0))
+            file.write(aux)
+            historial.append([temp,gas])
+        file.write("\n")
+
+    file.close()
+    return historial
+
 if __name__ == "__main__":
-    main()
+    historico = creaTabla()
+    print("[*] Datos Optenidos")
+    print(historico)
+    # main()
