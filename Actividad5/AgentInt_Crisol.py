@@ -11,25 +11,21 @@ def busca(historico, temp):
     for dato  in historico:
         if (temp == dato[0]):
             posibles.append(dato)
-  
-    if ( len(posibles) == 0 ):
+    aux = len(posibles)
+    
+    # Si no hay datos entonces regresa una pequeña cantidad de gas
+    if ( aux == 0 ):
         print("[i] Temperatura No encontrada en Historico")
         return randrange(4)+1
 
-    print("[i] Temperaturas encontradas en Historico {0}".format(len(posibles)))
-    # print(posibles)
+    print("[i] Temperaturas encontradas en Historico {0}".format(aux))
 
+    # Busca cual es la mejor cantidad de gas
     p = 0 # apuntador al indice mejor
-    aux = 0 # Auxiliar para saber cual es el mayor
-    tempF = 0
-    for i in range (0,11,1):
-        tempF = posibles[i][2]
-
-        if(tempF <= 320  ):
-            aux = tempF
+    for i in range (0,aux,1):
+        if(posibles[i][2] <= 320  ):
             p = i
-            
-    # print("[i] Mejor Temperatura Temp Futura {0} a {1}% de gas".format(aux,posibles[p][1]))
+
     return posibles[p][1]
 
 def main(historico):
@@ -45,14 +41,16 @@ def main(historico):
     for i in range(300):
         # Sensar
         temp = sensaTemperatura(temp, Gas, Vent)
-        
         print("[i] Temp Actual: {0}, % de Gas: {1}".format(temp,Gas))
 
+        # Se pregunta si existe en el pasado
         nivelGas = busca(historico,temp)
+
+        # Guarda En memoria
         str = "{0},{1}\n".format(temp,Gas)
         memoria.write(str)
         
-        # Pregunta sobre la temperatura
+        # Pregunta Si hizo lo correcto
         if( temp > 320):
             Vent = 1
             if(Gas != 0):
@@ -105,6 +103,4 @@ def creaTabla():
 
 if __name__ == "__main__":
     historico = creaTabla()
-    # print("[*] Datos Optenidos")
-    # print(historico)
     main(historico)
