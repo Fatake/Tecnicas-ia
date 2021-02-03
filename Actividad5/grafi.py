@@ -14,6 +14,8 @@ def openFile():
         os.exit(1)
 
     lineas = file.readlines()
+    i = 1
+    time = []
     temp = []
     gas = []
     f = False
@@ -24,23 +26,34 @@ def openFile():
         aux = linea.split(",")
         temp.append(int(aux[0]))
         gas.append(int(aux[1].replace("\n","")))
-    return temp, gas
+        time.append(i)
+        i += 1
+    return temp, gas , time
 
 
 def main():
-    temp, gas = openFile()
+    temp, gas, time = openFile()
     print(temp)
     print("\n")
     print(gas)
 
     fig, ax = plt.subplots()
-    ax.plot(temp, gas)
+    ax.plot(time, temp)
 
-    ax.set(xlabel='temperatura C°', ylabel='% de Gas',
-        title='Crisol Agente Simple')
+    ax.set(xlabel='Tiempo (s)°', ylabel='Temperatura',
+        title='Crisol Agente Bien Informado Temperatura')
     ax.grid()
 
-    fig.savefig("test.png")
+    fig.savefig("temp.png")
+
+    fig2, ax2 = plt.subplots()
+
+    ax2.plot(time, gas)
+    ax2.set(xlabel='Tiempo (s)°', ylabel='% De Gas',
+        title='Crisol Agente Bien Informado Temperatura')
+    ax2.grid()
+
+    fig2.savefig("gas.png")
     plt.show()
 
 if __name__ == "__main__":

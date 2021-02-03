@@ -5,17 +5,23 @@ def sensaTemperatura(temp, gas, vent):
 def aplicarGas(Gas):
     print("[+] Aplicando {0}% de Gas".format(Gas))
 
-def main():
-    memoria = open('datos.dat','w+')
+def busca(historico, temp):
+    posibles = []
+    for dato  in historico:
+        if (temp >= dato[0]):
+            posibles.append(dato)
+    print("[i] Temperaturas encontradas en Historico")
+    print(posibles)
 
+
+def main(historico):
     temp = 0 # maximo hasta 320
     Gas = 0 # 4 representa un 4 %
     Vent = 0 # 1 prendido 0 Apagado
 
     # Cuando vent = 1 entonces Gas se baja al 0%
 
-    memoria.write("Temp    Gas\n")
-    print("<-- Agente Simple Cristol -->")
+    print("<-- Agente Inteligente Cristol -->")
     
     for i in range(300):
         # Sensar
@@ -23,10 +29,8 @@ def main():
         
         print("[i] Temperatura: {0} Gas: {1}".format(temp,Gas))
 
-        # Registra
-        str = "{0}    {1}\n".format(temp,Gas)
-        memoria.write(str)
-
+        busca(historico,temp)
+        break
         # Pregunta sobre la temperatura
         if( temp > 320):
             Vent = 1
@@ -47,7 +51,6 @@ def main():
             aplicarGas(Gas)
         print("\n")
 
-    memoria.close()
 
 def creaTabla():
     file = open('Tabla.csv','w+')
@@ -75,6 +78,6 @@ def creaTabla():
 
 if __name__ == "__main__":
     historico = creaTabla()
-    print("[*] Datos Optenidos")
-    print(historico)
-    # main()
+    # print("[*] Datos Optenidos")
+    # print(historico)
+    main(historico)
