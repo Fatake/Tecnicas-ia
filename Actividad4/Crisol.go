@@ -7,10 +7,8 @@ import (
 	"strconv"
 )
 
-//
-const (
-	PATHFILE string = "datos.dat"
-)
+// PATHFILE paht del archivo
+const PATHFILE string = "datos.dat"
 
 func sensarTemp(temp int, gas int, vent int) int {
 	return (temp + (2 * gas) - (5 * vent))
