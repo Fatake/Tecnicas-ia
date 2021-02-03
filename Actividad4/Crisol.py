@@ -38,7 +38,7 @@ def main():
         else:
             if(Vent != 0):
                 Vent = 0
-                print ("[-] Ventilaci�n Apagada")
+                print ("[-] Ventilacion Apagada")
                 
             print( "[+] Aumentando nivel de gas") 
             Gas += 10
