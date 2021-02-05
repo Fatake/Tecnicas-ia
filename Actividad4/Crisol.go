@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strconv"
 )
 
 // PATHFILE paht del archivo
@@ -51,7 +50,7 @@ func main() {
 		temp = sensarTemp(temp, gas, vent)
 		fmt.Printf("[i] Temp: %d Gas: %d \n", temp, gas)
 
-		str := "" + strconv.Itoa(temp) + "    " + strconv.Itoa(gas) + "\n"
+		str := fmt.Sprintf("%d    %d", temp, gas)
 
 		if _, err := memoria.WriteString(str); err != nil {
 			log.Fatal(err)
