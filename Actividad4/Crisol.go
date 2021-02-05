@@ -34,6 +34,7 @@ func main() {
 			os.Exit(1)
 		}
 	}
+	defer memoria.Close()
 
 	if _, err := memoria.WriteString("Temp    Gas\n"); err != nil {
 		log.Fatal(err)
@@ -75,6 +76,5 @@ func main() {
 		fmt.Print("\n\n")
 		// time.Sleep(250 * time.Millisecond)
 	}
-	defer memoria.Close()
 	fmt.Print("[----]\n")
 }
