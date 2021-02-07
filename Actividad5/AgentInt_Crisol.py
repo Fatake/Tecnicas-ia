@@ -35,7 +35,7 @@ def main(historico):
     Vent = 0 # 1 prendido 0 Apagado
 
 		with open('datos.dat','w+') as memoria:
-			# Cuando vent = 1 entonces Gas se baja al 0%
+		    # Cuando vent = 1 entonces Gas se baja al 0%
 			memoria.write("Temp,Gas\n")
 			print("<-- Agente Inteligente Cristol -->")
 			
@@ -79,27 +79,26 @@ def main(historico):
 
 
 def creaTabla():
-    file = open('Tabla.csv','w+')
+    with open('Tabla.csv','w+') as file:
+        
+        file.write("t/g,0,10,20,30,40,50,60,70,80,90,100\n")
 
-    file.write("t/g,0,10,20,30,40,50,60,70,80,90,100\n")
+        print("<-- Haciendo Prueba Inicial -->")
+        historial = []
+        # Para cada Temperatura
+        for temp in range(0,330,10):
+            f = True
+            # Cada Porcentaje de Gas
+            for gas in range(0,110,10):
+                aux = ""
+                if (f):
+                    f = False
+                    aux += ""+str(temp)
+                aux += ","+str(sensaTemperatura(temp, gas, 0))
+                file.write(aux)
+                historial.append([temp,gas,sensaTemperatura(temp, gas, 0)])
+            file.write("\n")
 
-    print("<-- Haciendo Prueba Inicial -->")
-    historial = []
-    # Para cada Temperatura
-    for temp in range(0,330,10):
-        f = True
-        # Cada Porcentaje de Gas
-        for gas in range(0,110,10):
-            aux = ""
-            if (f):
-                f = False
-                aux += ""+str(temp)
-            aux += ","+str(sensaTemperatura(temp, gas, 0))
-            file.write(aux)
-            historial.append([temp,gas,sensaTemperatura(temp, gas, 0)])
-        file.write("\n")
-
-    file.close()
     return historial
 
 if __name__ == "__main__":
