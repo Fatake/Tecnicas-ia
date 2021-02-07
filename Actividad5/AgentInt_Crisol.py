@@ -29,53 +29,54 @@ def busca(historico, temp):
     return posibles[p][1]
 
 def main(historico):
-    memoria = open('datos.dat','w+')
+
     temp = 0 # maximo hasta 320
     Gas = 0 # 4 representa un 4 %
     Vent = 0 # 1 prendido 0 Apagado
 
-    # Cuando vent = 1 entonces Gas se baja al 0%
-    memoria.write("Temp,Gas\n")
-    print("<-- Agente Inteligente Cristol -->")
-    
-    for i in range(300):
-        # Sensar
-        temp = sensaTemperatura(temp, Gas, Vent)
-        print("[i] Temp Actual: {0}, % de Gas: {1}".format(temp,Gas))
+		with open('datos.dat','w+') as memoria:
+			# Cuando vent = 1 entonces Gas se baja al 0%
+			memoria.write("Temp,Gas\n")
+			print("<-- Agente Inteligente Cristol -->")
+			
+			for i in range(300):
+					# Sensar
+					temp = sensaTemperatura(temp, Gas, Vent)
+					print("[i] Temp Actual: {0}, % de Gas: {1}".format(temp,Gas))
 
-        # Se pregunta si existe en el pasado
-        nivelGas = busca(historico,temp)
+					# Se pregunta si existe en el pasado
+					nivelGas = busca(historico,temp)
 
-        # Guarda En memoria
-        str = "{0},{1}\n".format(temp,Gas)
-        memoria.write(str)
-        
-        # Pregunta Si hizo lo correcto
-        if( temp > 320):
-            Vent = 1
-            if(Gas != 0):
-                Gas = 0
-                print( "[-] Gas al 0% ") 
+					# Guarda En memoria
+					str = "{0},{1}\n".format(temp,Gas)
+					memoria.write(str)
+					
+					# Pregunta Si hizo lo correcto
+					if( temp > 320):
+							Vent = 1
+							if(Gas != 0):
+									Gas = 0
+									print( "[-] Gas al 0% ") 
 
-            print ("[+] Ventilacion prendida")
-        else:
-            if(Vent != 0):
-                Vent = 0
-                print ("[-] Ventilacion Apagada")
-            
-            if(Gas > nivelGas):
-                print( "[+] Disminuyendo Nivel de gas") 
-            else:
-                print( "[+] Aumentando nivel de gas") 
+							print ("[+] Ventilacion prendida")
+					else:
+							if(Vent != 0):
+									Vent = 0
+									print ("[-] Ventilacion Apagada")
+							
+							if(Gas > nivelGas):
+									print( "[+] Disminuyendo Nivel de gas") 
+							else:
+									print( "[+] Aumentando nivel de gas") 
 
-            Gas = nivelGas
-            # Actua
-            aplicarGas(Gas)
-            
-            if(Gas == 0):
-                Vent = 1
-        print("\n")
-    memoria.close()
+							Gas = nivelGas
+							# Actua
+							aplicarGas(Gas)
+							
+							if(Gas == 0):
+									Vent = 1
+					print("\n")
+
 
 def creaTabla():
     file = open('Tabla.csv','w+')
