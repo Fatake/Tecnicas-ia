@@ -49,6 +49,8 @@ def main():
     plt.xlabel('Etiqueta Prediccion')
 
     plt.savefig('Matriz_confusion.png')
+
+    print("Exactitud : {0}%".format(metrics.accuracy_score(Y_test, y_pred)*100))
     
 
 if __name__ == '__main__':
