@@ -8,7 +8,7 @@ fashion_mnist = keras.datasets.fashion_mnist
 model = keras.Sequential([keras.layers.Flatten(input_shape = (28, 28)), keras.layers.Dense(128, activation = tf.nn.relu), keras.layers.Dense(10, activation = tf.nn.softmax)])
 
 # Compilación del modelo
-model.compile(optimizer = tf.train.AdamOptimizer(), loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+model.compile(optimizer = tf.optimizers.Adam(), loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
 
 # Entrenamiento
 model.fit(train_images, train_labels, epochs=5)
