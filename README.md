@@ -15,6 +15,13 @@ Repositorio de tecnicas de Inteligencia Artificial, con ejercicios en Python, go
 
 ---
 
+### Cosas a Futuro
+
+1. Faltan programas sobre Tensor Flow
+2. Redes neuronales convolucionales
+3. Pasas los programas a Go
+4. Capitulo 3 del libro
+5. .... Todo el libro `U+1F643`
 
 
 ---
