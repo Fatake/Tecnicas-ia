@@ -6,9 +6,15 @@ Repositorio de tecnicas de Inteligencia Artificial, con ejercicios en Python, go
 
 ### Directorio de Trabajo
 
-* Actividad4: Serie de ejemplo de Agentes simples, Racionales y Bien informados aplicados en un crisol, o fundidora de metales que sensan y controlan la temperatura
+* Actividad4: Serie de ejemplo de Agentes simples, Racionales y Bien informados aplicados en un crisol, o fundidora de metales que sensan y controlan la temperatura.
+* Actividad5: Programas de Agentes Racionales con graficas de comportamiento y aprtendizaje del pasado con base de datos.
+* Arboles de Decisión: Programa que grafica el arbol de desision de la base de datos de titanic, en base al sexo del sobreviviente.
+* K-means: Programa en python con sklearn para aprendizaje no supervisado usando metodo del codo.
+* RegresionLinealSimpe: Programas de regresiones Lineales con 2 variables y 3 vaariables aplicadas en base de datos SalarioxExperiencia.
+* RegresionLogistica: Programa donde se exploran las matrices de Confusion y regresiones lineales en una base de datos de diabetes.
 
 ---
+
 ### Ejecucion
 
 Para Programas en GO
