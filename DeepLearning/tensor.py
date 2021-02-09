@@ -42,8 +42,25 @@ def main():
     test_loss, test_acc = model.evaluate(test_images, test_labels)
     print('Porcentaje del Modelo {0}%'.format(test_acc*100))
 
+    predictions = model.predict(test_images)
+
+    plt.figure(figsize = (10, 10))
+    for i in range(25):
+        plt.subplot(5, 5, i + 1)
+        plt.xticks([])
+        plt.yticks([])
+        plt.grid('off')
+        plt.imshow(test_images[i], cmap = plt.cm.binary)
+        predicted_label = np.argmax(predictions[i])
+        true_label = test_labels[i]
+        if predicted_label == true_label:
+            color = 'blue'
+        else: 
+            color = 'red'
+            
+        plt.xlabel('{} ({})'.format(class_names[predicted_label], class_names[true_label]), color = color)
+
     plt.show()
 
 if __name__ == '__main__':
     main()
-    
