@@ -34,6 +34,8 @@ def main():
     tablero.printTablero()
 
     iaNoInteligente(tablero)
+    tablero.printTablero()
+
 if __name__ == '__main__':
     main()
     
