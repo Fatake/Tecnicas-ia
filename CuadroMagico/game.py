@@ -2,7 +2,22 @@ from random import seed
 from random import randint
 
 class Tablero():
-    def __init__(self, size=4):
+    self.solucion1 = [[1,2,3,4],
+                      [5,6,7,8],
+                      [9,10,11,12],
+                      [13,14,15,-1]]
+    
+    self.solucion2 = [[1,2,3,5],
+                      [10,4,9,7],
+                      [14,6,12,11],
+                      [-1,8,15,13]]
+
+    self.solucion3 = None
+
+    def __init__(self, size=4, solucion=None):
+        if solucion != None:
+            self.solucion3 = solucion
+            
         self.size = size
         self.matriz = []
         self.__initZeros()
