@@ -10,11 +10,12 @@ def main():
     tablero.ponVacio([3,2])
 
     tablero.initTablero()
-    tablero.printTablero()
 
     agente = ia.Agente(tablero)
 
-    agente.iaNoInteligente()
+    # agente.iaNoInteligente()
+
+    agente.resuelve()
 
 
 if __name__ == '__main__':

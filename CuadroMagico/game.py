@@ -2,17 +2,17 @@ from random import seed
 from random import randint
 
 class Tablero():
-    self.solucion1 = [[1,2,3,4],
+    solucion1 = [[1,2,3,4],
                       [5,6,7,8],
                       [9,10,11,12],
                       [13,14,15,-1]]
     
-    self.solucion2 = [[1,2,3,5],
+    solucion2 = [[1,2,3,5],
                       [10,4,9,7],
                       [14,6,12,11],
                       [-1,8,15,13]]
 
-    self.solucion3 = None
+    solucion3 = None
 
     def __init__(self, size=4, solucion=None):
         if solucion != None:
@@ -130,3 +130,6 @@ class Tablero():
         # Respaldo la coordenada nueva del Vacio
         self.coordVacioActual[0] = nf
         self.coordVacioActual[1] = nc
+
+    def getSize(self):
+        return self.size
