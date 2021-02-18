@@ -1,5 +1,6 @@
 from random import seed
 from random import randint
+import numpy as np
 
 class Tablero():
     solucion1 = [[1,2,3,4],
@@ -10,28 +11,19 @@ class Tablero():
     solucionC = None
 
     def __init__(self, size=4, solucion=None):
+        '''
+            Crea una matriz de tamaño
+            size
+            establece una solucion personalizada
+        '''
         if solucion != None:
             self.solucionC = solucion
-            
-        self.size = size
-        self.matriz = []
-        self.__initZeros()
-
-    def __initZeros(self):
-        '''
-            Inicia Todo el tablero en Ceros
-        '''
-        matriz = []
-
-        # Para Cada Fila
-        for i in range(0,self.size):
-            col = []
-            # Para Cada Columna
-            for j in range(0,self.size):
-                col.append( 0 )
-            matriz.append(col)
         
-        self.matriz = matriz
+        self.size = size
+
+        # inicia la matriz en ceros
+        self.matriz = np.zeros((size,size),dtype=int)
+
 
     def initTablero(self):
         '''
