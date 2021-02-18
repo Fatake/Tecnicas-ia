@@ -7,9 +7,10 @@ import ia
 def main():
     print("\t<-----   Iniciando Cuadro Magico   ----->")
     tablero = g.Tablero()
-    tablero.ponVacio([3,2])
+    tablero.ponVacio([2,1])
 
-    tablero.initTablero()
+    tablero.initTablero() 
+    tablero.printTablero("\t<-----   Tablero Inicial  ---->\n")
 
     agente = ia.Agente(tablero)
 

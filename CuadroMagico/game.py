@@ -64,13 +64,13 @@ class Tablero():
         return False       
 
     def ponVacio(self, coordenada):
-        f = coordenada[0] - 1
-        c = coordenada[1] - 1 
+        f = coordenada[0]
+        c = coordenada[1]
         self.coordVacioActual = [f,c]
         self.matriz[f][c] = -1
 
-    def printTablero(self):
-        print("\t<-----   Tablero Actual  ---->\n")
+    def printTablero(self,string="\t<-----   Tablero Actual  ---->\n"):
+        print(string)
         for fila in self.matriz:
             c = 0
             for columna in fila:
@@ -93,8 +93,7 @@ class Tablero():
             l <- left 
             r <- right
         '''
-        fv = self.coordVacioActual[0] # Coordenada Vacio Fila
-        cv = self.coordVacioActual[1] # Coordenada Vacio Columna
+        fv,cv = self.coordVacioActual
 
         nf = 0 # Coordenada Nueva Fila
         nc = 0 # Coordenada Nueva Columna
@@ -113,14 +112,14 @@ class Tablero():
             nc = cv + 1
         
         if nf < 0 or nf > self.size-1:
-            # print("\nNo se puede mover en direccion "+direccion)
             return False
+            
         elif nc < 0 or nc > self.size-1:
-            # print("\nNo se puede mover en direccion "+direccion)
             return False
 
         # Intercambio
         aux = self.matriz[nf][nc] # Guardo el Valor de Destino
+
         # Se pone en el valor de destino el -1 Vacio
         self.matriz[nf][nc] = -1
 
@@ -128,8 +127,8 @@ class Tablero():
         self.matriz[fv][cv] = aux
 
         # Respaldo la coordenada nueva del Vacio
-        self.coordVacioActual[0] = nf
-        self.coordVacioActual[1] = nc
+        self.coordVacioActual = [nf,nc]
 
     def getSize(self):
         return self.size
+

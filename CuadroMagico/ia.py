@@ -1,6 +1,7 @@
 
 from random import randint
 from time import sleep
+import copy
 
 class Agente():
 
@@ -49,37 +50,39 @@ class Agente():
         return peso
          
 
-    def mejorMovimiento(self):
+    def mejorMovimiento(self,anterior):
         posiblesMovimientos = []
         
         # Hace todos los movimientos posibles y calcula costos
         for i in ['u','d','r','l']:
-            futuro = self.tableroActual
+            futuro = copy.deepcopy(self.tableroActual)
             futuro.mover(i)
+            # futuro.printTablero("\t<-----   Tablero Futuro {0}  ---->\n".format(i))
             costo = self.funcionCosto(futuro.matriz)
-            posiblesMovimientos.append([futuro.matriz,costo,i])
+            posiblesMovimientos.append([costo,i])
 
-        print("Costos:")
         best = 0
         j = 0
         for i in range(4):
-            print(posiblesMovimientos[i][1])
-            if posiblesMovimientos[i][1] > best:
+            if posiblesMovimientos[i][0] >= best and posiblesMovimientos[i][1] != anterior:
                 j = i
-                best = posiblesMovimientos[i][1]
-                
+                best = posiblesMovimientos[i][0]
+
+        print(posiblesMovimientos)
+        print("Best: ",posiblesMovimientos[j]) 
 
         return posiblesMovimientos[j]
         
     def resuelve(self):
         termina = self.tableroActual.getSize()
         termina *= termina
-        
+        anterior = ""
         f = 0
-        while f < termina:
-            aux = self.mejorMovimiento()
-            self.tableroActual.mover(aux[2])
+        while f < 5:
+            aux = self.mejorMovimiento(anterior)
+            anterior = aux[1]
+            self.tableroActual.mover(aux[1])
             # Costo
-            f = aux[1]
+            f += 1
             self.tableroActual.printTablero()
             # sleep(1)
