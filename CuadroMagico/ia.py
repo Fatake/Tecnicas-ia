@@ -77,7 +77,7 @@ class Agente():
         anterior = ""
 
         f = 0
-        while f < 1:
+        while f <5:
             # Calcula el mejor movimiento
             newMovimiento = self.mejorMovimiento(anterior,True)
             
