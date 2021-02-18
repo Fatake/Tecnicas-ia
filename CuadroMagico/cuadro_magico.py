@@ -16,8 +16,6 @@ def main():
 
     agente = ia.Agente(tablero)
 
-    # agente.iaNoInteligente()
-
     agente.resuelve()
 
 
