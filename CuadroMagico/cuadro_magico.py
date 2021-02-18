@@ -7,7 +7,9 @@ import ia
 def main():
     print("\t<-----   Iniciando Cuadro Magico   ----->")
     tablero = g.Tablero()
-    tablero.ponVacio([2,1])
+    if not tablero.ponVacio([2,1]):
+        print("[!] Error al poner el vacio, coordenadas no existentes\n\n")
+        exit(1)
 
     tablero.initTablero() 
     tablero.printTablero("\t<-----   Tablero Inicial  ---->\n")

@@ -6,17 +6,12 @@ class Tablero():
                       [5,6,7,8],
                       [9,10,11,12],
                       [13,14,15,-1]]
-    
-    solucion2 = [[1,2,3,5],
-                      [10,4,9,7],
-                      [14,6,12,11],
-                      [-1,8,15,13]]
 
-    solucion3 = None
+    solucionC = None
 
     def __init__(self, size=4, solucion=None):
         if solucion != None:
-            self.solucion3 = solucion
+            self.solucionC = solucion
             
         self.size = size
         self.matriz = []
@@ -57,6 +52,11 @@ class Tablero():
                         break
 
     def buscaExisteValor(self, valor):
+        '''
+            Funcion que retorna 
+            True si existe el Valor dado
+            False si no existe
+        '''
         for i in range(0,self.size):
             for j in range(0,self.size):
                 if self.matriz[i][j] == valor:
@@ -64,10 +64,27 @@ class Tablero():
         return False       
 
     def ponVacio(self, coordenada):
-        f = coordenada[0]
-        c = coordenada[1]
+        '''
+            Funcion que dada una coordenada
+            [fila,columna]
+            Pone un -1 en representacion del Vacio
+            Retorna:
+            True si se coloca correctamente
+            False si no existe la coordenada
+        '''
+
+        f,c = coordenada
+        
+        # Checa si existe la coordenada
+        if f < 0 or f > self.size-1:
+            return False
+        elif c < 0 or c > self.size-1:
+            return False
+        
         self.coordVacioActual = [f,c]
         self.matriz[f][c] = -1
+
+        return True
 
     def printTablero(self,string="\t<-----   Tablero Actual  ---->\n"):
         print(string)
@@ -79,7 +96,7 @@ class Tablero():
                     aux += "--"
                 else:
                     aux += str(columna)
-                if c == 3:
+                if c == self.size-1:
                     print(aux, end='')
                 else:
                     print(aux+" - ", end='')
@@ -93,6 +110,7 @@ class Tablero():
             l <- left 
             r <- right
         '''
+        # Optiene las coordenadas del Vacio actual
         fv,cv = self.coordVacioActual
 
         nf = 0 # Coordenada Nueva Fila
@@ -111,9 +129,9 @@ class Tablero():
             nf = fv
             nc = cv + 1
         
+        # Pregunta si puede mover a esa direccion
         if nf < 0 or nf > self.size-1:
             return False
-            
         elif nc < 0 or nc > self.size-1:
             return False
 
@@ -128,6 +146,8 @@ class Tablero():
 
         # Respaldo la coordenada nueva del Vacio
         self.coordVacioActual = [nf,nc]
+
+        return True
 
     def getSize(self):
         return self.size
