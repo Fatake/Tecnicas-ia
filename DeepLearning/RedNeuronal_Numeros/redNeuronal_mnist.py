@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 (train_data, train_labels), (test_data, test_labels) = mnist.load_data()
 
-print(train_data.shape)
-print("mostrando el numero {0}".format(train_labels[45]) )
+print("[i] Tamaño Base de datos ",train_data.shape)
+print("[i] mostrando el numero {0}".format(train_labels[45]) )
 plt.imshow(train_data[45]) # Muestra un 9
 plt.show()
 
@@ -32,4 +32,4 @@ y_test = to_categorical(test_labels)
 ## Entrenamiento
 model.fit(x_train, y_train, epochs=5, batch_size=128)
 
-# Evaluacion model.evaluate(x_test,y_test)
+print(model.evaluate(x_test,y_test))
